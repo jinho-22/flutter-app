@@ -16,14 +16,7 @@ class Kongbobitem extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          width: 150,
-          height: 150,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              image:
-                  const DecorationImage(image: AssetImage('images/usb.jpg'))),
-        ),
+        Hero(tag: 'image', child: Image.asset(width: 300, 'images/usb.jpg')),
         const SizedBox(
           width: 20,
         ),

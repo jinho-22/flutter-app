@@ -8,7 +8,12 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('detail')),
-      body: Text('$price'),
+      body: Column(
+        children: [
+          Hero(tag: 'image', child: Image.asset('images/usb.jpg')),
+          Text('$price'),
+        ],
+      ),
     );
   }
 }
